@@ -17,20 +17,30 @@ c = ns.Col()
 
 sfp = Path('temp.prq')
 
+class Const :
+    ind_url = 'http://www.tsetmc.com/tsev2/chart/data/Index.aspx?i={}&t=value'
+    headers = {
+            'User-Agent' : 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/39.0.2171.95 Safari/537.36'
+            }
+
+cte = Const()
+
 class ColName :
     pass
 
 cn = ColName()
+
+def make_index_url(id) :
+    return cte.ind_url.format(id , 1)
 
 def main() :
     pass
 
     ##
 
-
-
     ##
 
+    ##
 
 ##
 
